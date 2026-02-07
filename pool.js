@@ -1,5 +1,5 @@
 window.POOL_DATA = {
-  "updatedAt": "2026-02-07T14:05:01.481Z",
+  "updatedAt": "2026-02-07T22:10:00.944Z",
   "teams": [
     {
       "member": "Alex",
@@ -21,9 +21,9 @@ window.POOL_DATA = {
       "member": "Alex",
       "country": "Japan",
       "draftValue": 19,
-      "gold": 0,
-      "silver": 0,
-      "bronze": 0
+      "gold": 1,
+      "silver": 1,
+      "bronze": 1
     },
     {
       "member": "Alex",
@@ -191,7 +191,7 @@ window.POOL_DATA = {
       "draftValue": 34,
       "gold": 0,
       "silver": 0,
-      "bronze": 0
+      "bronze": 1
     },
     {
       "member": "Mike",
@@ -373,7 +373,7 @@ window.POOL_DATA = {
       "member": "Chris",
       "country": "Italy",
       "draftValue": 19,
-      "gold": 0,
+      "gold": 1,
       "silver": 1,
       "bronze": 1
     },
@@ -399,7 +399,7 @@ window.POOL_DATA = {
       "draftValue": 16,
       "gold": 0,
       "silver": 0,
-      "bronze": 0
+      "bronze": 1
     },
     {
       "member": "Chris",
@@ -565,8 +565,8 @@ window.POOL_DATA = {
       "member": "Dad",
       "country": "Norway",
       "draftValue": 54,
-      "gold": 0,
-      "silver": 0,
+      "gold": 1,
+      "silver": 1,
       "bronze": 1
     },
     {
@@ -582,7 +582,7 @@ window.POOL_DATA = {
       "country": "Slovenia",
       "draftValue": 6,
       "gold": 0,
-      "silver": 0,
+      "silver": 1,
       "bronze": 0
     },
     {

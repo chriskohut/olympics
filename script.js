@@ -1,12 +1,18 @@
 // Team data for the Olympic pool (loaded from data/pool.json)
 let teams = [];
+let lastUpdated = null;
 
 async function loadTeams() {
     if (window.POOL_DATA && Array.isArray(window.POOL_DATA.teams)) {
         teams = window.POOL_DATA.teams;
+        lastUpdated = window.POOL_DATA.updatedAt || null;
         return;
     }
 
+    await refreshTeams();
+}
+
+async function refreshTeams() {
     try {
         const response = await fetch('pool.json', { cache: 'no-store' });
         if (!response.ok) {
@@ -21,9 +27,10 @@ async function loadTeams() {
         }
 
         teams = loadedTeams;
+        lastUpdated = data.updatedAt || null;
+        window.POOL_DATA = { updatedAt: lastUpdated, teams };
     } catch (error) {
-        console.error('Unable to load pool data.', error);
-        teams = [];
+        console.error('Unable to refresh pool data.', error);
     }
 }
 
@@ -134,10 +141,10 @@ function populateStandings() {
     grid.innerHTML = '';
 
     if (lastUpdatedEl) {
-        if (window.POOL_DATA?.updatedAt) {
-            const updatedDate = new Date(window.POOL_DATA.updatedAt);
+        if (lastUpdated) {
+            const updatedDate = new Date(lastUpdated);
             const formatted = Number.isNaN(updatedDate.getTime())
-                ? window.POOL_DATA.updatedAt
+                ? lastUpdated
                 : updatedDate.toLocaleString();
             lastUpdatedEl.textContent = `Last updated: ${formatted}`;
         } else {
@@ -226,4 +233,9 @@ function populateStandings() {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadTeams();
     populateStandings();
+
+    setInterval(async () => {
+        await refreshTeams();
+        populateStandings();
+    }, 5 * 60 * 1000);
 });
