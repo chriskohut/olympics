@@ -9,28 +9,15 @@
 <body>
     <div class="container">
         <h1>🏅 Olympic Pool Standings</h1>
-        <table id="standings-table">
-            <thead>
-                <tr>
-                    <th>Rank</th>
-                    <th>Team Member</th>
-                    <th>Country</th>
-                    <th>Draft Value</th>
-                    <th>🥇 Gold</th>
-                    <th>🥈 Silver</th>
-                    <th>🥉 Bronze</th>
-                    <th>Total Points</th>
-                </tr>
-            </thead>
-            <tbody id="standings-body">
-                <!-- Standings will be populated by JavaScript -->
-            </tbody>
-        </table>
+        <p id="last-updated" class="note"></p>
+        <div id="teams-grid" class="teams-grid">
+            <!-- Team columns will be populated by JavaScript -->
+        </div>
         <div class="info">
             <p><strong>Scoring:</strong> Gold = 4 points, Silver = 2 points, Bronze = 1 point</p>
-            <p class="note">Draft values were used for team selection and do not impact standings.</p>
         </div>
     </div>
+    <script src="pool.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

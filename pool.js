@@ -1,0 +1,749 @@
+window.POOL_DATA = {
+  "updatedAt": "2026-02-07T14:00:01.603Z",
+  "teams": [
+    {
+      "member": "Alex",
+      "country": "Great Britain",
+      "draftValue": 4,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "France",
+      "draftValue": 20,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Japan",
+      "draftValue": 19,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "New Zealand",
+      "draftValue": 3,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Poland",
+      "draftValue": 2,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Brazil",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Georgia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Albania",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Andorra",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Turkey",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Ireland",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Moldova",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Uzbekistan",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Chile",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Kyrgyzstan",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "North Macedonia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Thailand",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Kosovo",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "UAE",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Philippines",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Estonia",
+      "draftValue": 1,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Austria",
+      "draftValue": 23,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Alex",
+      "country": "Netherlands",
+      "draftValue": 28,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Canada",
+      "draftValue": 34,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Switzerland",
+      "draftValue": 21,
+      "gold": 1,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Sweden",
+      "draftValue": 25,
+      "gold": 1,
+      "silver": 1,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Australia",
+      "draftValue": 4,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Spain",
+      "draftValue": 1,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Denmark",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Bulgaria",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Liechtenstein",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Greece",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Taiwan",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Jamaica",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Mongolia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Haiti",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "San Marino",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Trinidad and Tobago",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Bosnia & Herzegovina",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Benin",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Cyprus",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Colombia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Lebanon",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Morocco",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "Monaco",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Mike",
+      "country": "South Korea",
+      "draftValue": 15,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Italy",
+      "draftValue": 19,
+      "gold": 0,
+      "silver": 1,
+      "bronze": 1
+    },
+    {
+      "member": "Chris",
+      "country": "Germany",
+      "draftValue": 45,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Finland",
+      "draftValue": 8,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "China",
+      "draftValue": 16,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Latvia",
+      "draftValue": 1,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Romania",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Lithuania",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Argentina",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Hong Kong",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "South Africa",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Malta",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Iran",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Israel",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "India",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Pakistan",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Serbia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Eritrea",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Nigeria",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Bolivia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Ukraine",
+      "draftValue": 2,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Belgium",
+      "draftValue": 2,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Hungary",
+      "draftValue": 3,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Chris",
+      "country": "Slovakia",
+      "draftValue": 4,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "USA",
+      "draftValue": 34,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Norway",
+      "draftValue": 54,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 1
+    },
+    {
+      "member": "Dad",
+      "country": "Czechia",
+      "draftValue": 6,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Slovenia",
+      "draftValue": 6,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Kazakhstan",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Croatia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Azerbaijan",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Iceland",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "North Korea",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Armenia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Luxembourg",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Uruguay",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Mexico",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Saudi Arabia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Singapore",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Guinea-Bissau",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Portugal",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Puerto Rico",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Madagascar",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Venezuela",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Ecuador",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Malaysia",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Kenya",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    },
+    {
+      "member": "Dad",
+      "country": "Montenegro",
+      "draftValue": 0,
+      "gold": 0,
+      "silver": 0,
+      "bronze": 0
+    }
+  ]
+};
