@@ -34,6 +34,8 @@ const POINTS = {
     bronze: 1
 };
 
+const sortState = new Map();
+
 /**
  * Calculate total points for a team
  * @param {Object} team - Team object with medal counts
@@ -58,6 +60,39 @@ function populateStandings() {
         }
 
         return name.length > 15 ? name.slice(0, 15) : name;
+    };
+
+    const getCountryRatio = (country) => {
+        return country.draftValue > 0 ? (country.points / country.draftValue) : 0;
+    };
+
+    const compareCountries = (a, b, config) => {
+        const key = config?.key || 'points';
+        const dir = config?.dir === 'asc' ? 1 : -1;
+
+        const tieBreak = () => a.country.localeCompare(b.country);
+
+        if (key === 'country') {
+            const countryCompare = a.country.localeCompare(b.country) * dir;
+            return countryCompare || (b.points - a.points) || (b.draftValue - a.draftValue);
+        }
+
+        if (key === 'value') {
+            const diff = (a.draftValue - b.draftValue) * dir;
+            return diff || tieBreak();
+        }
+
+        if (key === 'gold' || key === 'silver' || key === 'bronze' || key === 'points') {
+            const diff = (a[key] - b[key]) * dir;
+            return diff || tieBreak();
+        }
+
+        if (key === 'ratio') {
+            const diff = (getCountryRatio(a) - getCountryRatio(b)) * dir;
+            return diff || tieBreak();
+        }
+
+        return 0;
     };
 
     // Group countries by team member and aggregate medal counts
@@ -116,15 +151,10 @@ function populateStandings() {
         column.className = 'team-column';
 
         const totalMedals = team.gold + team.silver + team.bronze;
-        const sortedCountries = [...team.countries].sort((a, b) => {
-            if (b.points !== a.points) {
-                return b.points - a.points;
-            }
-
-            return b.draftValue - a.draftValue;
-        });
+        const sortConfig = sortState.get(team.member) || { key: 'points', dir: 'desc' };
+        const sortedCountries = [...team.countries].sort((a, b) => compareCountries(a, b, sortConfig));
         const countriesRows = sortedCountries.map(country => {
-            const countryRatio = country.draftValue > 0 ? (country.points / country.draftValue) : 0;
+            const countryRatio = getCountryRatio(country);
             return `
             <tr>
                 <td class="country-cell" title="${country.country}">${truncateCountry(country.country)}</td>
@@ -154,13 +184,13 @@ function populateStandings() {
             <table class="team-table">
                 <thead>
                     <tr>
-                        <th>Country</th>
-                        <th>Val</th>
-                        <th>🥇</th>
-                        <th>🥈</th>
-                        <th>🥉</th>
-                        <th>Pts</th>
-                        <th>M/V</th>
+                        <th class="sortable" data-sort-key="country" data-team="${team.member}">Country</th>
+                        <th class="sortable" data-sort-key="value" data-team="${team.member}">Val</th>
+                        <th class="sortable" data-sort-key="gold" data-team="${team.member}">🥇</th>
+                        <th class="sortable" data-sort-key="silver" data-team="${team.member}">🥈</th>
+                        <th class="sortable" data-sort-key="bronze" data-team="${team.member}">🥉</th>
+                        <th class="sortable" data-sort-key="points" data-team="${team.member}">Pts</th>
+                        <th class="sortable" data-sort-key="ratio" data-team="${team.member}">M/V</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -170,6 +200,25 @@ function populateStandings() {
         `;
 
         grid.appendChild(column);
+
+        column.querySelectorAll('th.sortable').forEach((header) => {
+            header.addEventListener('click', () => {
+                const key = header.dataset.sortKey;
+                const member = header.dataset.team;
+                if (!key || !member) {
+                    return;
+                }
+
+                const current = sortState.get(member);
+                let dir = key === 'country' ? 'asc' : 'desc';
+                if (current && current.key === key) {
+                    dir = current.dir === 'desc' ? 'asc' : 'desc';
+                }
+
+                sortState.set(member, { key, dir });
+                populateStandings();
+            });
+        });
     });
 }
 
